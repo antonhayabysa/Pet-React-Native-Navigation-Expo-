@@ -22,14 +22,13 @@ export const signUpStyles = StyleSheet.create({
         width: 67.5,
         height: 90,
         resizeMode: 'contain',
-        marginTop: height * 0.4 * 0.1,
         marginBottom: height * 0.4 * 0,
         alignSelf:'center',
     },
     titleText: {
-        marginTop: height * 0.5 * 0.10,
+        marginTop: height * 0.3 * 0.1,
         fontSize: 24,
-        marginBottom: height * 0.5 * 0.07,
+        marginBottom: height * 0.5 * 0,
         fontWeight:'500',
         textAlign:'center'
     },
@@ -60,10 +59,11 @@ export const signUpStyles = StyleSheet.create({
     },
     codeLabel: {
         alignSelf: 'flex-start',
-        marginTop: 9,
+        marginTop: 2,
         marginLeft: 17,
     },
     codeLabelText: {
+        paddingBottom:2,
         fontSize: 14,
         color:'#9795A4',
         fontWeight:'500'
@@ -82,7 +82,6 @@ export const signUpStyles = StyleSheet.create({
         borderRadius: 5,
         paddingLeft: 15,
         paddingRight: 15,
-        paddingTop: 10,
         paddingBottom: 10,
         width: '100%',
     },
@@ -138,7 +137,7 @@ export const signUpStyles = StyleSheet.create({
     },
     signUpButton: {
         alignItems: 'center',
-        marginTop: 20,
+        marginTop: 5,
         backgroundColor: '#FFC612',
         borderRadius: 20,
         paddingHorizontal: 40,
@@ -156,11 +155,10 @@ export const signUpStyles = StyleSheet.create({
         fontWeight: '400',
         fontSize: 14,
         textAlign:'center',
-        marginTop: height * 0.5 * 0.05,
+        marginTop: height * 0.5 * 0.03,
         color: '#9795A4',
     },
     linkTextNext: {
-        marginTop: height * 0.5 * 0.05,
         color: '#FFC612',
         fontSize:14,
         fontWeight:'400',

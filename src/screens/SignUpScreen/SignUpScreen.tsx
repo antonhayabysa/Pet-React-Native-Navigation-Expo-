@@ -23,14 +23,20 @@ const SignUpScreen = ({ navigation }:Props) => {
     const saveDataToDB = () => {
         db.transaction((tx) => {
             tx.executeSql(
-                `ALTER TABLE users ADD COLUMN phone TEXT;`, // добавляем столбец phone
+                `CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT NOT NULL,
+        email TEXT NOT NULL,
+        password TEXT NOT NULL,
+        phone TEXT
+      );`,
                 [],
                 () => {
-                    console.log('Phone column added successfully');
+                    console.log('Users table created successfully');
                 },
                 // @ts-ignore
                 (_, error) => {
-                    console.log('Error while adding phone column to users table: ', error);
+                    console.log('Error while creating users table: ', error);
                 }
             );
 
@@ -48,6 +54,7 @@ const SignUpScreen = ({ navigation }:Props) => {
             );
         });
     };
+
 
     return (
         <View style={signUpStyles.container}>
@@ -105,9 +112,7 @@ const SignUpScreen = ({ navigation }:Props) => {
             <TextInput
                 style={signUpStyles.inputUp}
                 placeholder="Your name"
-
             />
-
             <TextInput
                 style={signUpStyles.inputUp}
                 placeholder="Email"

@@ -154,10 +154,9 @@ export const profileStyles = StyleSheet.create({
     },
     signUpButton: {
         alignItems: 'center',
-        marginTop: 20,
+        marginTop: 5,
         backgroundColor: '#FFC612',
         borderRadius: 20,
-        paddingHorizontal: 40,
         width:'100%',
         height:62,
         justifyContent: 'center',
