@@ -7,6 +7,7 @@ Pet-проект "React Native Navigation Expo"
 Клонируйте репозиторий с помощью команды git clone https://github.com/antonhayabysa/Pet-React-Native-Navigation-Expo-.git
 Установите зависимости с помощью команды npm install
 Запустите проект с помощью команды expo start
+
 Экраны
 
 Sign In
