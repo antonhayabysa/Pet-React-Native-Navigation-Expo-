@@ -11,20 +11,16 @@ import { DatabaseConnection } from './src/assets/database/databaseConnection';
 const Stack = createNativeStackNavigator();
 const db = DatabaseConnection.getConnection();
 
-// Создание таблицы users
-db.transaction((tx: { executeSql: (arg0: string) => void; }) => {
+db.transaction((tx: { executeSql: (arg0: string, arg1?: any[]) => void; }) => {
     tx.executeSql(
         'CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT, password TEXT);'
     );
-});
-
-// Добавление данных в таблицу users
-db.transaction((tx: { executeSql: (arg0: string, arg1: string[]) => void; }) => {
     tx.executeSql(
         'INSERT INTO users (email, password) VALUES (?, ?);',
         ['test@example.com', '123456']
     );
 });
+
 
 const App = () => {
     return (

@@ -29,7 +29,13 @@ const ProfileScreen = ({ navigation }:Props) => {
                 [],
                 () => console.log('Position column added successfully'),
                 // @ts-ignore
-                (_, error) => console.log('Error while adding position column to users table: ', error)
+                (_, error) => {
+                    if (error && error.message.includes('duplicate column name')) {
+                        console.log('Position column already exists');
+                    } else {
+                        console.log('Error while adding position column to users table: ', error);
+                    }
+                }
             );
 
             tx.executeSql(
@@ -37,7 +43,13 @@ const ProfileScreen = ({ navigation }:Props) => {
                 [],
                 () => console.log('Skype column added successfully'),
                 // @ts-ignore
-                (_, error) => console.log('Error while adding skype column to users table: ', error)
+                (_, error) => {
+                    if (error && error.message.includes('duplicate column name')) {
+                        console.log('Skype column already exists');
+                    } else {
+                        console.log('Error while adding skype column to users table: ', error);
+                    }
+                }
             );
 
             tx.executeSql(
@@ -54,6 +66,7 @@ const ProfileScreen = ({ navigation }:Props) => {
             );
         });
     };
+
 
     function setName(text: string): void {
         throw new Error('Function not implemented.');
