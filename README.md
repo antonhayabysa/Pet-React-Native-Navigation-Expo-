@@ -20,3 +20,5 @@ Profile
 Экран профиля содержит информацию о пользователе. Имя пользователя, email и должность отображаются в виде текстовых полей. Также есть кнопка "Выйти", которая возвращает на экран авторизации. 
 Ссылка на дизайн: https://www.figma.com/file/2FDJMpyWhFUiAroSnLfhVB/React-Native-task
 
+![LogIn](<img width="376" alt="LogIn" src="https://user-images.githubusercontent.com/83969662/222252670-b861860e-599a-4c1c-8c1f-98f8780c01fd.png">
+)
