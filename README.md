@@ -1,24 +1,24 @@
-Pet-проект "React Native Navigation Expo"
+Pet-project "React Native Navigation Expo"
 
-Проект представляет собой мобильное приложение на React Native с использованием библиотеки React Navigation Expo. Приложение содержит 3 экрана: Sign In, Sign Up и Profile, которые используют типизацию с помощью TypeScript. В качестве хранилища используется SQLite.
+The project is a React Native mobile application using the React Navigation Expo library. The application contains 3 screens: Sign In, Sign Up and Profile, which use TypeScript typing. SQLite is used as storage.
 
-Установка и запуск
+Installation and launch
 
-Клонируйте репозиторий с помощью команды git clone https://github.com/antonhayabysa/Pet-React-Native-Navigation-Expo-.git
-Установите зависимости с помощью команды npm install
-Запустите проект с помощью команды expo start
+Clone the repository with git clone command https://github.com/antonhayabysa/Pet-React-Native-Navigation-Expo-.git
+Install dependencies with npm install
+Run the project with the expo start command
 
-Экраны
+Screens
 
-Sign In
-Экран авторизации содержит форму для ввода имени пользователя и пароля. При успешной авторизации происходит переход на экран Profile.
+sign in
+The authorization screen contains a form for entering a username and password. Upon successful authorization, you are taken to the Profile screen.
 
-Sign Up
-Экран регистрации содержит форму для ввода имени пользователя, email, пароля, номера телефона и должности. При успешной регистрации происходит переход на экран Profile.
+sign up
+The registration screen contains a form for entering a username, email, password, phone number, and position. Upon successful registration, you will be taken to the Profile screen.
 
 Profile
-Экран профиля содержит информацию о пользователе. Имя пользователя, email и должность отображаются в виде текстовых полей. Также есть кнопка "Выйти", которая возвращает на экран авторизации. 
-Ссылка на дизайн: https://www.figma.com/file/2FDJMpyWhFUiAroSnLfhVB/React-Native-task
+The profile screen contains information about the user. Username, email and position are displayed as text fields. There is also a "Logout" button that returns you to the login screen.
+Design link: https://www.figma.com/file/2FDJMpyWhFUiAroSnLfhVB/React-Native-task
 
 ![IOS]
 
